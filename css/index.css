@@ -214,3 +214,25 @@ address {
     left: 50px;
     width: fit-content;
 }
+
+.left-price {
+    min-width: 310px;
+    text-align: right;
+}
+
+.right-price {
+    min-width: 310px;
+    text-align: right;
+}
+
+#prices h5 {
+    text-align: center;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 2px;
+}
