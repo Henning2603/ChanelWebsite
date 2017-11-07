@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" media="(max-width: 740px)" href="css/responsive.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/popup-window.css">
     </head>
     <body>
         <header>
@@ -36,6 +37,20 @@
             </div>
             <img class="wow zoomIn" src="img/logo.png" alt="Ейфорія" id="euphoria">
         </header>
+        <div id="parent_popup">
+            <div id="popup">
+                <div>
+                    <img src="img/about.jpg" alt="" id="popup-img">
+                    <p>
+                        Запрошуємо на роботу перукаря. Дзвоніть!!!<br>
+                        <a href="tel:+380637848670" class="smooth">
+                            <img src="img/phone.png">
+                        </a>
+                    </p>
+                </div>
+                <a class="close" id="close" title="Закрити" onclick="document.getElementById('parent_popup').style.display='none';">X</a>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,6 +70,11 @@
                     <li class="nav-item active">
                         <a class="nav-link smooth" href="#services">
                             Послуги <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link smooth" href="#prices">
+                            Ціни <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item active">
@@ -116,6 +136,59 @@
                         <img src="img/services/solarium.png" alt="Солярій" class="services-img">
                         <h3>Солярій</h3>
                         <p>Здорова засмагла шкіра - ознака привабливості, доглянутості та достатку. У нашому солярії кожен бажаючий може отримати голівудську засмагу у будь-яку пору року. </p>
+                    </div>
+                </div>
+            </section>
+            <section id="prices">
+                <h2 class="wow zoomIn">ЦІНИ</h2>
+                <div class="prices">
+                    <div class="left-price">
+                        <ul>
+                            <h5>Жіночі перукарські послуги</h5>
+                            <li>Стрижка   .................................... від 60грн</li>
+                            <li>Корекція   ........................................... 50грн</li>
+                            <li>Укладка + миття   ..................... від 50грн</li>
+                            <li>Накрутка(щіпці,бігуді)   ......... від 60грн</li>
+                            <li>Дифузорна укладка   .................... 150грн</li>
+                            <li>Витягування утюжком   ......... від 60грн</li>
+                            <li>Плетіння колоска   ................... від 50грн</li>
+                            <li>Зачіска вечірня   ..................... від 200грн</li>
+                            <li>Зачіска весільна   ................... від 300грн</li>
+                            <li>Хімічна завивка   .................... від 200грн</li>
+                            <li>Біохімія   .................................... від 200грн</li>
+                            <li>Омбре(белаяж)   ...................... від 250грн</li>
+                            <li>Мелірування   ........................... від 130грн</li>
+                            <li>Фарбування   ............................. від 130грн</li>
+                            <br>
+                            <h5>Чоловічі перукарські послуги</h5>
+                            <li>Стрижка   ...................................... від 40грн</li>
+                            <li>Корекція бороди   ............................. 25грн</li>
+                            <li>Стрижка вус   ...................................... 10грн</li>
+                        </ul>
+                    </div>
+                    <div class="right-price">
+                        <ul>
+                            <h5>Манікюрні послуги</h5>
+                            <li>Манікюр   ............................................ 40грн</li>
+                            <li>Педікюр   ............................................ 120грн</li>
+                            <li>Покриття лакком   ............................ 10грн</li>
+                            <li>Воскова депіляція   .................. від 70грн</li>
+                            <li>Французький манікюр   ................. 30грн</li>
+                            <li>Художній манікюр   ................. від 40грн</li>
+                            <li>Гелеве нарощування   ........... від 250грн</li>
+                            <li>Корекція нігтів(гелева)   ...... від 200грн</li>
+                            <li>Зняття нарощених нігтів   ............ 50грн</li>
+                            <li>Покриття гель-лаком   .......... від 100грн</li>
+                            <li>Біотатуаж брів   ................................ 70грн</li>
+                            <li>Парафінотерапія   ............................ 70грн</li>
+                            <li>Зняття гель-лаку   ........................... 30грн</li>
+                            <li>Ремонт нігтя   ....................................... 5грн</li>
+                            <br>
+                            <h5>Інші послуги</h5>
+                            <li>Солярій(1хв)   ........................................ 5грн</li>
+                            <li>Візаж   .......................................... від 250грн</li>
+                            <li>Нарощення вій   .............................. 250грн</li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -312,9 +385,9 @@
         </main>
         <footer>
             <img src="img/call.png" alt="Телефон">
-            <a href="tel:+380637848670 ">+38(063)-784-86-70</a>
-            <a href="tel:+380677017905 ">+38(067)-701-79-05</a>
-            <a href="tel:+380322458089 ">+38(032)-245-80-89</a>
+            <a href="tel:+380637848670">+38(063)-784-86-70</a>
+            <a href="tel:+380677017905">+38(067)-701-79-05</a>
+            <a href="tel:+380322458089">+38(032)-245-80-89</a>
         </footer>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous "></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js " integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4 " crossorigin="anonymous "></script>
@@ -323,5 +396,6 @@
         <script type="text/javascript" src="js/wow.min.js"></script>
         <script type="text/javascript" src="js/wow.js"></script>
         <script type="text/javascript" src="js/bootstrap-collapse-navbar.js"></script>
+        <script type="text/javascript" src="js/popup-window.js"></script>
     </body>
 </html>
