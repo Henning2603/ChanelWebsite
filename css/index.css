@@ -236,3 +236,8 @@ address {
     justify-content: space-around;
     padding-right: 2px;
 }
+
+.prices ul {
+    padding-left: 30px;
+    padding-right: 10px;
+}
