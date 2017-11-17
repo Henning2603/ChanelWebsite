@@ -241,3 +241,7 @@ address {
     padding-left: 30px;
     padding-right: 10px;
 }
+
+#popup__toggle{
+    display: none;
+}
