@@ -85,4 +85,7 @@
     .services {
         max-width: 90%;
     }
+    #popup__toggle {
+        display: block
+    }
 }
