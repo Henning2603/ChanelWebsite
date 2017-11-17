@@ -225,8 +225,9 @@ address {
     text-align: right;
 }
 
-#prices p {
+#prices .serv {
     text-align: center;
+    list-style-type: none;
 }
 
 .prices {
